@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Mart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="heading">
+        <h4>Welcome to our shop!</h4>
+        <div class="right-heading">
+            <a href="#"><i class="fas fa-location-pin"><span>select location</span></i></a>
+            <a href="#"><i class="fas fa-sign-in-alt"><span>Login</span></i></a>
+            <a href="#"><i class="fas fa-sign-out-alt"><span>Register</span></i></a>
+        </div>
+    </div>
+    <header class="header-search">
+        <a href="index.html" id="logo">Electronics <strong>M</strong>art</a>
+        <div class="mid-section">
+            <form method="post">
+                <input type="search" class="search" name="search" id="search" placeholder="Search for products, brands and more">
+                <button class="main-btn"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="right-section">
+            <i class="fa-regular fa-moon" id="icon"></i>
+            <i class="fa-regular fa-heart" id="heart"></i>
+            <i class="fas fa-shopping-cart" id="cart"></i><b>Cart</b>
+        </div>
+    </header>
+    <nav id="navbar">
+        <select name="categories" id="categories">
+            <option value="all Categories">All Categories</option>
+            <option value="Mobiles">Mobile</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Ipad">Ipad</option>
+            <option value="AC">Air Condition</option>
+            <option value="Washing Machine">Washing Machine</option>
+            <option value="TV">TV</option>
+        </select>
+        <i class="fas fa-bars" id="menu-icon"></i>
+        <div class="navlinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#electronics">Electronics</a>
+            <a href="#appliances">Appliances</a>
+            <a href="#">About us</a>
+            <a href="#">New arrivals</a>
+            <a href="#">Pages</a>
+            <a href="#">Contact us</a>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Top <span id="brand">Brands</span> lowest <span id="price">Prices</span><br> </h3>
+            <h2>Wide range of mobile <br> phones!</h2>
+            <a href="#appliances" class="shop">Shop now</a>
+        </div>
+        <div class="image">
+            <img src="/img/phone.png" alt="phone" width="250">
+        </div>
+    </section>
+
+    <section class="electronics" id="appliances">
+        <h2 class="title">Our <strong id="strong">New Products</strong></h2>
+        <menu class="products-list">
+            <aside>
+                <h3 class="aside-title">Customer review</h3>
+                <ul>
+                    <li style="cursor: default;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><b>5.0</b></li>
+                    <li style="cursor: default;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><b>4.0</b></li>
+                    <li style="cursor: default;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i><b>3.5</b></li>
+                    <li style="cursor: default;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><b>3.0</b></li>
+                    <li style="cursor: default;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i><b>2.5</b></li>
+                </ul>
+                <h3 class="aside-title">price</h3>
+                <ul class="price-list">
+                    <li>Under $1,000</li>
+                    <li>$1,000-$5000</li>
+                    <li>$5000-$10,000</li>
+                    <li>$10,000-$20,000</li>
+                    <li>$20,000-$30,000</li>
+                    <li>Over $30,000</li>
+                </ul>
+                <h3 class="aside-title">Discount</h3>
+                <ul>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>5% or more</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>10% or more</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>20% or more</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>30% or more</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>50% or more</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>60% or more</b></li>
+                </ul>
+                <h3 class="aside-title">Electronics</h3>
+                <ul>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Accessories</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Cameras & Photography</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Car & Vehicle Electronics</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Computers & Accessories</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>GPS & Accessories</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Headphones</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Home Audio</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Home Theater, TV & Video</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Mobiles & Accessories</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Portable Media Players</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Tablets</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Telephones & Accessories</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Wearable Technology</b></li>
+                </ul>
+                <h3 class="aside-title">Cash on delivery</h3>
+                <ul>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Eligible for Cash On Delivery</b></li>
+                </ul>
+                <h3 class="aside-title">New arrivals</h3>
+                <ul>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Last 30 days</b></li>
+                    <li><input type="checkbox" name="checkbox" id="checkbox"><b>Last 90 days</b></li>
+                </ul>
+                <h3 class="aside-title">best seller</h3>
+                <div class="product">
+                    <img src="/img/Headphone.png" alt="Headphone" width="70" height="70">
+                    <div class="about-product">
+                        <span>boAt Rockerz 450 Bluetooth Headset(Luscious Black, On the Ear) <br></span>
+                        <b>$1,199.00</b>
+                    </div>
+                </div>
+            </aside>
+            <div class="product-items">
+                <div class="content">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/img/Product img/Xiaomi redmi note 9.jpg" alt="Redmi note 9" height="220" width="220">
+                            <div class="info">
+                                <h3>Xiaomi Redmi Note 9</h3>
+                                <strong>$250</strong>
+                                <span>$400</span>
+                                <button class="AddToCart"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/img/Product img/Xiaomi redmi note 10.jpg" alt="Redmi note 10" height="220" width="220">
+                            <div class="info">
+                                <h3>Xiaomi Redmi Note 10</h3>
+                                <strong>$370</strong>
+                                <span>$490</span>
+                                <button class="AddToCart"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/img/Product img/A70.jpg" alt="A70" height="220" width="220">
+                            <div class="info">
+                                <h3>Samsung Galaxy A70</h3>
+                                <strong>$400</strong>
+                                <span>$530</span>
+                                <button class="AddToCart"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/img/Product img/A73.jpg" alt="A73" height="220" width="220">
+                            <div class="info">
+                                <h3>Samsung Galaxy A73</h3>
+                                <strong>$500</strong>
+                                <span>$660</span>
+                                <button class="AddToCart"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/img/Product img/Apple Ipad.jpg" alt="Apple Ipad" height="220" width="220">
+                            <div class="info">
+                                <h3>Apple Ipad</h3>
+                                <strong>$300</strong>
+                                <span>$510</span>
+                                <button class="AddToCart"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/img/Product img/Fan.jpg" alt="Fan" height="220" width="180">
+                            <div class="info">
+                                <h3>Vertical fan</h3>
+                                <strong>$100</strong>
+                                <span>$240</span>
+                                <button class="AddToCart"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/img/Product img/Hisense AC.jpg" alt="AC" width="250">
+                            <div class="info">
+                                <h3>Hisense Air Condition</h3>
+                                <strong>$400</strong>
+                                <span>$670</span>
+                                <button class="AddToCart"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/img/Product img/Iphone 14 pro max.jpg" alt="Iphone 14 pro max" height="220" width="220">
+                            <div class="info">
+                                <h3>Iphone 14 pro max 256GB</h3>
+                                <strong>$900</strong>
+                                <span>$1200</span>
+                                <button class="AddToCart"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/img/Product img/Iphone XS.png" alt="Iphone XS" height="220" width="220">
+                            <div class="info">
+                                <h3>Iphone XS 128GB</h3>
+                                <strong>$800</strong>
+                                <span>$1000</span>
+                                <button class="AddToCart"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/img/Product img/Refrigerator.png" alt="Refrigerator" height="220" width="220">
+                            <div class="info">
+                                <h3>Refrigerator BERG</h3>
+                                <strong>$600</strong>
+                                <span>$840</span>
+                                <button class="AddToCart"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="/img/Product img/Microwave.jpg" alt="Microwave" height="220" width="220">
+                            <div class="info">
+                                <h3>Microwave Hisense</h3>
+                                <strong>$300</strong>
+                                <span>$530</span>
+                                <button class="AddToCart"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content" style="margin-top: 35px;">
+                            <img src="/img/Product img/Samsung Smart TV.png" alt="Samsung Smart TV" height="150" width="220">
+                            <div class="info">
+                                <h3>Samsung Smart TV</h3>
+                                <strong>$500</strong>
+                                <span>$980</span>
+                                <button class="AddToCart" style="margin-top: 60px;"><i class="fas fa-shopping-cart"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </menu>
+    </section>
+
+    <section class="offer">
+        <div class="smart-watch">
+            <h4>New Collections, New Trendy</h4>
+            <span class="watch">Smart Watches</span>
+            <h4>Sale up to 25% off all in store</h4>
+        </div>
+        <div class="watch-img">
+            <img src="/img/Smart Watch.png" alt="Smart-Watch" width="90">
+        </div>
+        <div class="smart-phone">
+            <h4>Top Brands, lowest Prices</h4>
+            <span class="phone">Smart Phones</span>
+            <h4>Free shipping order over $100</h4>
+        </div>
+        <div class="phone-img">
+            <img src="/img/Smart Phone.png" alt="smart-phone" width="90">
+        </div>
+    </section>
+
+    <section class="electronics" id="electronics">
+        <div class="container">
+            <h1>Electronics</h1>
+            <p>If you're considering a new laptop, looking for a powerful new car stereo or shipping for a new 
+                HDTV, we make it easy to find exactly <br><br> what you need at a price you can afford. We offer Every Day
+                Low Prices on TVs, laptops, cell phones, tablets and ipads, video games, <br><br> desktop computers,
+                cameras and camcorders, audio, video and more.
+            </p>
+            <div class="shipping-details">
+                <div class="shipping-content">
+                    <i class="fas fa-dolly"></i>
+                    <div class="shipping-info">
+                        <h3 class="ship-title">Free Shipping</h3>
+                        <span>on orders over $100</span>
+                    </div>
+                </div>
+                <div class="shipping-content">
+                    <i class="fas fa-shipping-fast"></i>
+                    <div class="shipping-info">
+                        <h3 class="ship-title">Fast Delivery</h3>
+                        <span>World Wide</span>
+                    </div>
+                </div>
+                <div class="shipping-content">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <div class="shipping-info">
+                        <h3 class="ship-title">Big Choise</h3>
+                        <span>of Products</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer-category">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Mobiles</a></li>
+                <li><a href="#">Computers</a></li>
+                <li><a href="#">TV, Audio</a></li>
+                <li><a href="#">Smartphones</a></li>
+                <li><a href="#">Washing Machines</a></li>
+                <li><a href="#">Refrigerator</a></li>
+            </ul>
+        </div>
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Faqs</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="get-in-touch">
+            <h3>Get in Touch</h3>
+                <ul>
+                    <li><i class="fas fa-location-pin"></i>Mkc, 123 Sebastian, USA</li>
+                    <li><i class="fas fa-building"></i>12 2345 6790</li>
+                    <li><i class="fas fa-phone"></i>+11 3672 1890</li>
+                    <li><i class="fas fa-envelope-open"></i>mail 1@example.com</li>
+                    <li><i class="fas fa-envelope-open"></i>mail 2@example.com</li>
+                </ul>
+        </div>
+        <div class="newsletter">
+            <h3>Newsletter</h3> <br>
+            <span>Free Delivery on your first order!</span>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <button><i class="fas fa-paper-plane"></i></button>
+            <div class="social-media">
+                <h2>Follow Us on</h2>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-container">
+        <div class="product-container-list">
+            <h1>Mobile & Tablets:</h1>
+            <span>Android Phones | Smartphones | Feature Phones
+                | Unboxed Phones | Refurbished Phones | Tablets |
+                CDMA Phones |<br><br> Value Added Services | Sell Old | Used Mobiles |
+            </span>
+            <h1>Computers:</h1>
+            <span>Laptops | Printers | Routers | Link & Toner Cartridges | Monitors |
+                Video Games | Unboxed & Refurbished Laptops |<br><br> Assembled Desktops | Data Cards |
+            </span>
+            <h1>TV, Audio & Large Appliances:</h1>
+            <span>Tvs & DTH | Home Theatre Systems | Hidden Cameras & CCTVs
+                | Refrigerators | Washing Machine | Air Conditioners |
+                Cameras |<br><br> Speakers |
+            </span>
+            <h1>Mobile & Laptop Accessories:</h1>
+            <span>Headphones | Power Banks | Backpacks
+                | Mobile Cases & Covers | Pen Drives | External Hard Disks |
+                Mouse |<br><br> Smart Watches & Fitness Bands | MicroSD Cards |
+            </span>
+            <h1>Appliances:</h1>
+            <span>Trimmers | Hair Dryers | Emergency Lights
+                | Water Purifiers | Electric Kettles | Hair Straighteners |
+                Induction Cooktops |<br><br> Sewing Machines | Geysers |
+            </span>
+            <h1>Popular on Electronics Mart</h1>
+            <span>Offers & Coupons | Couple Watches | Gas Stoves
+                | Air Coolers | Air Purifiers | Headphones |
+                Headsets | Pressure Cookers |<br><br> Sandwich Makers | Air Friers | Irons |
+                LED TV | Sandwich Makers
+            </span>
+            <div class="payment-method">
+                <h1>Payment Method</h1>
+                <div class="payment-img">
+                    <img src="/img/Payment img/mastercard.png" alt="mastercard">
+                    <img src="/img/Payment img/Discover.jpg" alt="discover">
+                    <img src="/img/Payment img/VISA.png" alt="visa">
+                    <img src="/img/Payment img/American Express.png" alt="American Express">
+                    <img src="/img/Payment img/Rupay.jpg" alt="Rupay">
+                    <img src="/img/Payment img/Maestro.png" alt="maestro">
+                    <img src="/img/Payment img/netbanking.png" alt="netbanking">
+                    <img src="/img/Payment img/COD.jpg" alt="COD">
+                    <img src="/img/Payment img/Easy emi option.jpg" alt="easy emi option">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2021 Electronics Mart. Designed by Berj Ghazarian.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
